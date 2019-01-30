@@ -1,4 +1,11 @@
-# coding_practice
+# coding_practice  
+
+Data Structure and Algorithms  
+1) Searching  
+	a) Binary Search  
+2) Sorting  
+	a) Bubble sort  
+
 
 Techgig:  Python Practice
 ------------------------  

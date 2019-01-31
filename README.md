@@ -17,3 +17,6 @@ Techgig:  Python Practice
 	e)Multiplication with python  
 	f)Take input and print with python  
 	g)Say hello to python  
+	h)Play with fibonacci series  
+2) String  
+	a) Print first character  

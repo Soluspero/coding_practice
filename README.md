@@ -9,14 +9,6 @@ Data Structure and Algorithms
 
 Techgig:  Python Practice
 ------------------------  
-1) Introduction  
-	a)subtraction with python  
-	b)Add two numbers with python  
-	c)Modulus with python  
-	d)Division with python  
-	e)Multiplication with python  
-	f)Take input and print with python  
-	g)Say hello to python  
-	h)Play with fibonacci series  
+1) Introduction    
 2) String  
-	a) Print first character  
+3) Sets  

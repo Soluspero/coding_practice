@@ -12,4 +12,5 @@ Techgig:  Python Practice
 1) Introduction    
 2) String  
 3) Sets  
-4) Collections
+4) Collections  
+5) Basic Data Types  

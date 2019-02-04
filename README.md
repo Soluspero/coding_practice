@@ -1,16 +1,4 @@
 # coding_practice  
 
-Data Structure and Algorithms  
-1) Searching  
-	a) Binary Search  
-2) Sorting  
-	a) Bubble sort  
-
-
-Techgig:  Python Practice
-------------------------  
-1) Introduction    
-2) String  
-3) Sets  
-4) Collections  
-5) Basic Data Types  
+This repository contains DSA and python practice problems from sites  
+<a href="https://www.techgig.com/">Techgig</a>|<a href="https://www.hackerearth.com/">HackerEarth</a>  

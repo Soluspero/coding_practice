@@ -5,18 +5,19 @@ import sys
 def main():
 
  # Write code here 
- start = 900
- stop = 1000
- 
+ start = int(input())
+ stop = int(input())
+ sl=[]
  for num in range(start, stop+1):
      if num > 1:
         for i in range(2,num//2):
             if num%i == 0:
                 break
         else:
-            print(num, file=sys.stdout, flush=False)
-
- print("a","b",sep="\n")
+            #print(num, sep="\n",end="\n",file=sys.stdout, flush=False)
+            sl.append(str(num))
+ sys.stdout.write("\n".join(sl))
+    
 
 main()
 

@@ -5,11 +5,11 @@ def main():
 
  # Write code here 
     n  = int(input().strip())
-    alist =list(map(int, input().strip().split()))
-    
-    res = len(list(filter(lambda x : x<0, alist)))
-    # res = len([ x for x in alist if x <0])
-    sys.stdout.write(str(res))
+    alist =[]
+    for x in range(n):
+        alist.append(input().strip())
+        
+    sys.stdout.write(str(len(set(alist))))
 
 main()
 

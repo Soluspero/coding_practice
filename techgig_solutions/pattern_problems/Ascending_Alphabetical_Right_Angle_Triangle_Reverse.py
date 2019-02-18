@@ -11,7 +11,7 @@ import sys
 def main():
 
  # Write code here 
- n = 5 #int(input().strip())
+ n = int(input().strip())
  s =""
  for i in range(n):
      for j in range(0,n-i):

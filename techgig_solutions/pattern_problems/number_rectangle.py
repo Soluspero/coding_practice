@@ -1,0 +1,23 @@
+''' Read input from STDIN. Print your output to STDOUT '''
+    #Use input() to read input from STDIN and use print to write your output to STDOUT
+"""
+output
+1 1 1 1 1
+2 2 2 2 2
+3 3 3 3 3
+4 4 4 4 4
+5 5 5 5 5 
+"""
+import sys
+def main():
+
+ # Write code here 
+ n = int(input().strip())
+ for i in range(1,n+1):
+     s = (str(i)+" ")*n
+     sys.stdout.write(s.strip())
+     if i < n:
+         sys.stdout.write("\n")
+ 
+main()
+

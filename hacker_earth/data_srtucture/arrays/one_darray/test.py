@@ -1,12 +1,14 @@
 def test():
-	n = 6
-	l = [16,17,4,3,5,2]
-	i =0
-	while i!=n-1:
-		if l[i+1] > l[i]:
-			print(l[i+1],end=" ")
-		i+=1
-	print(l[-1])
+	n ={}
+	l = [17,17,2,2,5,2]
+	for x in l:
+		if x not in n.keys():
+			n[x]=1
+		else:
+			n[x]+=1
+
+	print(n)
+	print(sorted(n.items(),key=lambda x : x[1]))
 
 if __name__ == '__main__':
     import timeit

@@ -8,17 +8,23 @@
 I H G F E D C B A
 """
 
-import sys
+from sys import stdout
 def main():
 
  # Write code here 
- n = 5 #int(input().strip())
- for i in range(n,0,-1):
- 	for j in range(1,i):
- 		print(" ",end="")
+ n = int(input().strip())
+ s=""
 
- 	for k in range(n ,i,-1):
- 		print(" *",end="")
- 	print(" ")
+ for i in range(1,2*n,2):
+    stdout.write(" "*((2*n-2)-(i-1)))
+    for j in range(i,0,-1):
+    	s+=(chr(64+j)+" ")
+    stdout.write(s.strip())
+    
+    if i < 2*(n-1):
+    	s=""
+    	stdout.write("\n")
 main()
+
+
 

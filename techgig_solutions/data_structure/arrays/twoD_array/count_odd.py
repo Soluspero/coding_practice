@@ -15,7 +15,7 @@ from sys import stdout
 def main():
 
  # Write code here 
- row, col = 4, 4 #int(input().strip().split())
+ row, col = int(input().strip().split())
  alist = []
 
  for r in range(row):

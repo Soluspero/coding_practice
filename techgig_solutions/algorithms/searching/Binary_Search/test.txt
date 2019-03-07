@@ -1,0 +1,87 @@
+''' Read input from STDIN. Print your output to STDOUT '''
+    #Use input() to read input from STDIN and use print to write your output to STDOUT
+    
+def display(list_list):
+    for ls in list_list:
+        print(ls)
+        print('\n')
+
+def find_sub_set(n, st, sum):
+    list_list = [[True] * (sum + 1) for x in range(n + 1)]
+    #display(list_list)
+    #when sum is 0
+    for i in range(0, n+1):
+        list_list[i][0] = True
+    #when set is empty
+    for j in range(1, sum+1):
+        list_list[0][j] = False
+    for i in range(1, n+1):
+        for j in range(1, sum+1):
+            if j < st[i-1]:
+                list_list[i][j] = list_list[i-1][j]
+            else:
+                list_list[i][j] = list_list[i-1][j] or list_list[i-1][j - st[i-1]]
+    i = n
+    j = sum
+    if not list_list[i][j]:
+        return
+    res = []
+    while i > 0:
+        if not list_list[i-1][j]:
+            res.append(st[i-1])
+            i = i - 1
+            j = j - st[i]
+        else:
+            i = i - 1
+    return res
+
+def main(n, st, bin):
+    count = 0
+    while True:
+        res = find_sub_set(len(st), st, bin)
+        #print(res)
+        if res:
+            count += 1
+            for elem in res:
+                st.remove(elem)
+        else:
+            bin -= 1
+        if bin <= 0:
+            break
+        if not st:
+            break
+    if not bin and st:
+        print('NA')
+    else:
+        print(count)
+    
+    #print(res)
+ # Write code here 
+ 
+
+n = int(input())
+st = []
+ls = input()
+st = [int(x) for x in ls.split()]
+bin = int(input())
+#find_sub_set(3, [3, 4, 5], 12)
+#print(n)
+
+main(n, st, bin)
+
+*******************************************************************************
+a=int(input())
+b=list(map(int,input().split()))
+c=int(input())
+res = 0
+bin_rem = c;
+for x in range(len(b)):
+    if b[x]>bin_rem:
+        res=res+1
+        bin_rem=c-b[x]
+    else:
+        bin_rem=bin_rem-b[x]
+print(res)
+
+
+********************************************************************************
